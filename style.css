@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 200px;
+    margin-left: 1460px;
+    margin-top: 10px;
+}
+
+#button1 {
+    margin-bottom: 5px;
+}
+
+#danger {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#button_no_ok, a {
+    text-decoration: none;
+    color: white;
+}
+
+#button_ok, a {
+    text-decoration: none;
+    color: #090000;
+
+    width: 200px;
+}
+
+#position_1 {
+    text-align: center;
+}
+
+#container_position {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.interview {
+    text-align: center;
+}
+
+body.completed_login {
+    text-align: center;
+}
+
+
+body.test_result {
+    text-align: center;
+}
+
