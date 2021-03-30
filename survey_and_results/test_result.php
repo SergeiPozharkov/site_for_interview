@@ -11,7 +11,7 @@ session_start();
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="test_result">
 <div class="container">
@@ -29,7 +29,7 @@ session_start();
             $q44 = "4. Какой вы национальности?";
             $q55 = "5. Какое у вас вероисповедание?";
 
-            $data = json_decode(file_get_contents("data.json"), true);
+            $data = json_decode(file_get_contents("../data/data.json"), true);
 
             echo "<table border='2' class='table table-bordered border-primary'>";
             echo "<th colspan='5'>Вопросы и ответы</th><th>Имя пользователя</th>";
@@ -42,7 +42,7 @@ session_start();
             echo "</table>";
             ?>
 
-            <a id="test" class="btn btn-secondary" href="index.php">Вернуться на главную страницу</a>
+            <a id="test" class="btn btn-secondary" href="../index.php">Вернуться на главную страницу</a>
         </div>
         <div class="col-3">
 
