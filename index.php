@@ -9,7 +9,7 @@
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="registration">
+<body class="main_page">
 <!-- Главная страница с конпкой входа и регистрации-->
 <div id="main">
     <div id="button1">

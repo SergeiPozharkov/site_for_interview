@@ -19,8 +19,8 @@
         <div class="col-sm">
             <form action="../validation/interview_check.php" method="post">
                 <div id="q1"><span>1. Из какого вы города?</span><br>
-                    <input type="radio" class="form-check-input mt-0" aria-label="Radio button for following text input"
-                           name="q1" value=" г.Минск"><span>г.Минск</span><br>
+                    <input type="radio" class="form-check-input mt-0"
+                           name="q1" value="г.Минск"><span>г.Минск</span><br>
                     <input type="radio" class="form-check-input mt-0" name="q1" value="г.Витебск"><span>
                         г.Витебск</span><br>
                     <input type="radio" class="form-check-input mt-0" name="q1" value="г.Брест"><span>

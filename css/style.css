@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body.main_page {
+    background-image: url("../images/main.jpg");
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
 #main {
     width: 200px;
     margin-left: 1460px;
@@ -40,7 +46,25 @@
 }
 
 body.interview {
+    background-color: #446291;
     text-align: center;
+    background-image: repeating-linear-gradient(
+            100deg,
+            rgba(200, 200, 200, 0.06),
+            rgba(200, 200, 200, 0.06) 5px,
+            transparent 0,
+            transparent 40px
+    ),
+    repeating-linear-gradient(
+            -100deg,
+            rgba(200, 200, 200, 0.06),
+            rgba(200, 200, 200, 0.06) 5px,
+            transparent 0,
+            transparent 40px
+    );
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body.completed_login {

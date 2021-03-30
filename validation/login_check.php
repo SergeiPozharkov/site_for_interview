@@ -19,12 +19,12 @@ $data = json_decode(file_get_contents("../data/user_data.json"), true);
 
 foreach ($data as $row) {
 
-    if ($row['name'] == $name and $row['login'] == $login and $row['pass'] == $pass) {
+    if ($row['name'] == $name && $row['login'] == $login && $row['pass'] == $pass) {
         $_SESSION['username'] = $name;
         header("Location: ../alerts/completed_login.php");
     }
 
-    if ($name == "Admin" and $login == "admin" and $pass == "admin") {
+    if ($name == "Admin" && $login == "admin" && $pass == "admin") {
 
         header("Location: ../survey_and_results/test_result.php");
     }

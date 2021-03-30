@@ -31,13 +31,13 @@ session_start();
 
             $data = json_decode(file_get_contents("../data/data.json"), true);
 
-            echo "<table border='2' class='table table-bordered border-primary'>";
+            echo "<table border='2' class='table table-bordered border-dark'>";
             echo "<th colspan='5'>Вопросы и ответы</th><th>Имя пользователя</th>";
             foreach ($data as $row) {
 
-                echo "<tr><td><b>$q11</b><br><i>$row[q1]</i></td><td><b>$q22</b><br><i>$row[q2]</i></td><td><b>$q33</b>
-                <br><i>$row[q3]</i></td><td><b>$q44</b><br><i>$row[q4]</i></td><td><b>$q55</b><br><i>$row[q5]</i></td>
-                <td><br><i>$row[username]</i></td></tr>";
+                echo "<tr><td><b>$q11</b></td><td><b>$q22</b></td><td><b>$q33</b></td><td><b>$q44</b></td><td><b>$q55
+                </b></td><td rowspan='2'><i>$row[username]</i></td></tr><tr><td><i>$row[q1]</i></td><td><i>$row[q2]</i>
+                </td><td><i>$row[q3]</i></td><td><i>$row[q4]</i></td><td><i>$row[q5]</i></td></tr>";
             }
             echo "</table>";
             ?>
