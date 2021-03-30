@@ -1,5 +1,5 @@
 <?php
-
+// Скрипт, проверяющий на валидность введенных данных пользователем в поля формы регистрации
 $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
 $login = filter_var(trim($_POST["login"]), FILTER_SANITIZE_STRING);
 $pass = filter_var(trim($_POST["pass"]), FILTER_SANITIZE_STRING);
@@ -24,6 +24,7 @@ if (strlen($name) < 2 || strlen($name) > 50) {
     exit();
 }
 
+// Часть скрипта, осуществляющая запись в json файл данных пользователя, которые прошли валидацию
 $userData = json_decode(file_get_contents("../data/user_data.json"));
 $userData[] = ['name' => $name, 'login' => $login, 'pass' => $pass];
 file_put_contents("../data/user_data.json", json_encode($userData));

@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body class="interview">
-<!-- Форма опроса пользователя,который прошел регитрацию и выполнил вход-->
+<!-- Форма опроса пользователя,который прошел регитрацию и авторизовался-->
 <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -98,7 +98,7 @@
 </div>
 
 <?php
-// Функция ini_set не отображает вывод всех ошибок на экране пользователя
+// Функция ini_set отключает вывод всех ошибок на экран пользователя
 ini_set('display_errors', 'Off');
 include "../validation/interview_check.php"; ?>
 </body>

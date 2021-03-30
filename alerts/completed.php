@@ -1,3 +1,4 @@
+<!-- Старт/продолжение сессии -->
 <?php session_start(); ?>
 <!doctype html>
 <html lang="en">
@@ -12,6 +13,7 @@
     <title>Document</title>
 </head>
 <body id="position_1">
+<!-- Страница с благодарностью за прохождение опроса пользователем -->
 <div class="container" id="container_position">
     <div class="row">
         <div class="col-sm">
@@ -19,7 +21,7 @@
         </div>
         <div class="col-sm">
             <div class="alert alert-success" role="alert" id="danger">
-                <h1>Поздравляем, <?= $_SESSION['username'] ?> вы успешно прошли опрос!</h1>
+                <h1><?= $_SESSION['username'] ?>, благодарим вас за прохождение опроса!</h1>
             </div>
             <br>
             <a href='../index.php' id="button_ok" class='btn btn-success'>Вернуться на главную страницу сайта</a>

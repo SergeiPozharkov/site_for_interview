@@ -1,3 +1,4 @@
+<!-- Старт/продолжение сессии -->
 <?php session_start(); ?>
 <!doctype html>
 <html lang="en">
@@ -12,6 +13,7 @@
     <title>Document</title>
 </head>
 <body id="position_1">
+<!--Страница с сообщением о том, что пользователь ответил не на все вопросы -->
 <div class="container" id="container_position">
     <div class="row">
         <div class="col-sm">

@@ -1,3 +1,4 @@
+<!-- Файл для подключения bootstrap стилей к алертам (верхняя часть html страницы) -->
 <!doctype html>
 <html lang="en">
 <head>

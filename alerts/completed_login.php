@@ -1,3 +1,4 @@
+<!-- Старт/продолжение сессии -->
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="completed_login">
-<!--Выводит сообщение об успешном входе и дает возможность пройти опрос-->
+<!--Страница с сообщением об успешном входе и кнопкой для перехода к опросу-->
 <div class="container">
     <div class="row">
         <div class="col-sm">

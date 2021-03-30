@@ -1,6 +1,5 @@
-<?php
-session_start();
-?>
+<!--Старт/продолжение сессии-->
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,6 +13,7 @@ session_start();
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="test_result">
+<!-- Страница с результатами опросов (доступна только пользователю Admin) -->
 <div class="container">
     <div class="row">
         <div class="col-3">
@@ -22,7 +22,7 @@ session_start();
         <div class="col-6">
 
             <?php
-
+            // Скрипт, осуществляющий генерацию таблицы с результатами опросов и именами пользователей прошедших его
             $q11 = "1. Из какого вы города?";
             $q22 = "2. Ваш пол?";
             $q33 = "3. Ваш возраст?";
