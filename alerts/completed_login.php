@@ -1,5 +1,4 @@
-<!-- Старт/продолжение сессии -->
-<?php session_start(); ?>
+<?php session_start(); //Старт/продолжение сессии?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
