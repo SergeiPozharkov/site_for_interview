@@ -1,5 +1,15 @@
 <?php
 // Скрипт, проверяющий на валидность введенных данных пользователем в поля формы регистрации
+
+if (empty($_POST["login"] || $_POST["login"] = "") || empty($_POST["pass"] || $_POST["pass"] = "") ||
+    empty($_POST["name"] || $_POST["name"] = "")) {
+    include "../include/include_header.php";
+    echo "<div class='alert alert-danger' role='alert' id='danger'><h1>Заполните все поля!!!</h1></div>";
+    echo "<a href='../forms/registration.html' class='btn btn-success'>Вернуться к форме регистрации</a>";
+    include "../include/include_footer.php";
+    exit();
+}
+
 $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
 $login = filter_var(trim($_POST["login"]), FILTER_SANITIZE_STRING);
 $pass = filter_var(trim($_POST["pass"]), FILTER_SANITIZE_STRING);
