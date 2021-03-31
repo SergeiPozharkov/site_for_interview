@@ -1,5 +1,4 @@
-<!-- Старт/продолжение сессии -->
-<?php session_start(); ?>
+<?php session_start(); //Старт/продолжение сессии ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,8 +23,8 @@
                 <h1><?= $_SESSION['username'] ?>, вы ответили не на все вопросы!</h1>
             </div>
             <br>
-            <button id="button_no_ok" class="btn btn-secondary"><a href='../survey_and_results/interview.php'>Вернуться
-                    к опросу</a></button>
+            <a href='../survey_and_results/interview.php' id="button_no_ok" class="btn btn-secondary">Вернуться
+                к опросу</a>
         </div>
         <div class="col-sm">
 
